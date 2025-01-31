@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section Exposition */
+.exposition {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.exposition-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.exposition-img {
+    max-width: 50%;  /* Limite la taille de l'image */
+    margin-right: 20px;  /* Espace entre l'image et le texte */
+    object-fit: cover;
+}
+
+/* Texte */
+.text-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Pour mobile : l'image doit être en haut et occuper toute la largeur */
+@media (max-width: 768px) {
+    .exposition-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .exposition-img {
+        max-width: 100%;  /* L'image occupe toute la largeur */
+        margin-right: 0;  /* Supprime l'espace entre l'image et le texte */
+        margin-bottom: 20px;  /* Ajoute de l'espace sous l'image */
+    }
+
+    .text-content {
+        text-align: center;  /* Centrer le texte sur mobile */
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.bloc {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #eaeaea;
+    text-align: center;
+    min-width: 250px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
